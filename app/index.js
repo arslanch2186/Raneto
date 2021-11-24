@@ -47,7 +47,7 @@ function initialize (config) {
 
   // Set IP Address and Port
   app.set('host', process.env.HOST || '127.0.0.1');
-  app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || 8484);
 
   // set locale as date and time format
   moment.locale(config.locale);
