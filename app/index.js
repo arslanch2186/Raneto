@@ -136,7 +136,7 @@ function initialize (config) {
   // Wrap App if base_url is set
   if (config.base_url !== '' && config.nowrap !== true) {
     var wrap_app = express();
-    wrap_app.set('port', process.env.PORT || 3000);
+    wrap_app.set('port', process.env.PORT || 8484);
     wrap_app.use(config.base_url, app);
     return wrap_app;
   } else {
